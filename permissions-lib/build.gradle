@@ -10,7 +10,7 @@ ext {
 
     publishedGroupId = "com.github.velikovpetar.corelibrary"
     artifact = "permissions-lib"
-    libraryVersion = "1.0.1"
+    libraryVersion = "1.0.2"
 
     libraryDescription = "Collection of reusable helper class for Android development."
     siteUrl = "https://github.com/VelikovPetar/CoreLibrary"

@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Core.iml" filepath="$PROJECT_DIR$/Core.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/permissions-lib/core-lib.iml" filepath="$PROJECT_DIR$/permissions-lib/core-lib.iml" />
+      <module fileurl="file://D:\AndroidProjects\Core\permissions-lib\core-lib.iml" filepath="D:\AndroidProjects\Core\permissions-lib\core-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/permissions-lib/permissions-lib.iml" filepath="$PROJECT_DIR$/permissions-lib/permissions-lib.iml" />
     </modules>
   </component>
 </project>

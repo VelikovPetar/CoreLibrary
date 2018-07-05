@@ -1,4 +1,27 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+ext {
+    bintrayRepo = "core-library"
+    bintrayName = "com.github.velikovpetar.corelibrary"
+
+    libraryName = "core-lib"
+
+    publishedGroupId = "com.github.velikovpetar.corelibrary"
+    artifact = "core-lib"
+    libraryVersion = "1.0.0"
+
+    libraryDescription = "Collection of reusable helper class for Android development."
+    siteUrl = "https://github.com/VelikovPetar/CoreLibrary"
+    gitUrl = "https://github.com/VelikovPetar/CoreLibrary.git"
+    developerId = "VelikovPetar"
+    developerName = "Petar Velikov"
+    developerEmail = "petarvelikov95@gmail.com"
+    licenseName = "The Apache Software Licence, Version 2.0"
+    licenseUrl = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 26
@@ -31,4 +54,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+if (project.rootProject.file('local.properties').exists()) {
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
 }
